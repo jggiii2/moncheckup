@@ -1,0 +1,174 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.sidenav-trigger {
+  color: #000;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255, 255, 255, .9);
+}
+
+.parallax-container .section {
+  width: 100%;
+}
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+/**
+* ADDED BY SLY
+**/
+
+/* HEADER  */
+@media only screen and (min-width : 401px) {
+  div#index-banner h1 {
+    margin-top: 12rem;
+  }
+}
+div#index-banner h1 {
+  text-shadow: 2px 2px #fff;
+}
+
+/* FONTS */
+.upper-txt {
+  text-transform: uppercase;
+}
+.dropdown-content li>a, .dropdown-content li>span {
+  color: #444;
+}
+h1 {
+  font-size: 3.7rem;
+}
+h2 {
+  font-size: 2.9rem;
+}
+h4 {
+  font-size: 1.8rem;
+}
+h5 {
+  font-size: 1.4rem;
+}
+
+/* IMAGES */
+@media only screen and (min-width : 710px) {
+  div.ratings img.responsive-img {
+    width: 185px;
+    max-width: 185px;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  div.ratings img.responsive-img {
+    width: 185px;
+    max-width: 185px;
+  }
+}
+
+/* COUNTDOWN */
+.countdown,
+.countdown2 {
+  display: inline-flex;
+}
+
+.countdown .day,
+.countdown .hour,
+.countdown .min,
+.countdown .sec,
+.countdown2 .day,
+.countdown2 .hour,
+.countdown2 .min,
+.countdown2 .sec {
+
+  padding: 1vw 3vw;
+  text-align: center;
+}
+
+.countdown .day .num,
+.countdown .hour .num,
+.countdown .min .num,
+.countdown .sec .num,
+.countdown2 .day .num,
+.countdown2 .hour .num,
+.countdown2 .min .num,
+.countdown2 .sec .num {
+  display: block;
+  font-size: 8vw;
+  line-height: 1em;
+}
+
+.countdown .day .word,
+.countdown .hour .word,
+.countdown .min .word,
+.countdown .sec .word,
+.countdown2 .day .word,
+.countdown2 .hour .word,
+.countdown2 .min .word,
+.countdown2 .sec .word {
+  display: block;
+  font-size: 2vw;
+}
+
+/* PARALLAX */
+@media only screen and (max-width: 992px) {
+  .parallax-container .section {
+    position: relative;
+  }
+}
+
+/* TEAM MEMBERS */
+.extra-padding {
+  padding: .5em;
+}
+.extra-padding a p {
+  text-decoration:none;
+  color: #000;
+}
+@media only screen and (max-width: 600px) {
+  div.extra-padding {
+    margin-bottom: 2em;
+  }
+}
