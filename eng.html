@@ -8,14 +8,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords"
         content="symptom checker, health, optimise, insurance, pain, cervical, back, knee, pain, diabetes, cancer, heart, skin">
-    <title>Testez vos Symptômes | MonCheckUp.ch | Test Santé</title>
+    <title>Check your symptoms | MyCheckUp.ch | Health Test</title>
 
     <!-- CSS  -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="assets/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
     <link href="assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
-    <link href="assets/css/extras.css" type="text/css" rel="stylesheet" />
 
     <!-- ICONS -->
     <link rel="icon" href="favicon.jpg" type="favicon.jpg">
@@ -33,7 +32,7 @@
                     </a>
                     <ul class="right hide-on-med-and-down">
                         <li>
-                            <a class="white-text" href="#">FR</a>
+                            <a class="white-text" href="index.html">FR</a>
                         </li>
                         <li>
                             <a class="white-text" href="de.html">DE</a>
@@ -42,7 +41,7 @@
                             <a class="white-text" href="it.html">IT</a>
                         </li>
                         <li>
-                            <a class="white-text" href="eng.html">ENG</a>
+                            <a class="white-text" href="#">ENG</a>
                         </li>
                     </ul>
                     <a href="#" data-target="nav-mobile" class="sidenav-trigger white-text"><i
@@ -55,7 +54,7 @@
         <!-- this needs to be moved out .navbar fixed to work in mobile -->
         <ul id="nav-mobile" class="sidenav">
             <li>
-                <a href="#">FR</a>
+                <a href="index.html">FR</a>
             </li>
             <li>
                 <a href="de.html">DE</a>
@@ -64,7 +63,7 @@
                 <a href="it.html">IT</a>
             </li>
             <li>
-                <a href="eng.html">ENG</a>
+                <a href="#">ENG</a>
             </li>
         </ul>
     </div>
@@ -77,10 +76,10 @@
             <div class="row center">
                 <div class="col s12 m6 l6">
                     <div class="row center">
-                        <h4 class="blue-text text-lighten-1">Mon Traitement est-il bien couvert par mon Assurance ?</h4>
-                        <h4 class="grey-text text-darken-1">Ai-je déjà dépensé inutilement mon Argent pour des Soins
-                            d'une Maladie que je n'avais pas ?</h4>
-                        <h4 class="blue-text text-lighten-1">Dois-je vraiment aller chez le Médecin ?</h4>
+                        <h4 class="blue-text text-lighten-1">Is my Treatment well covered by my Insurance?</h4>
+                        <h4 class="grey-text text-darken-1">Have I ever spent my Money uselessly for treating an Ailment
+                            I didn't have?</h4>
+                        <h4 class="blue-text text-lighten-1">Do I really need to see a Doctor?</h4>
                     </div>
                 </div>
                 <div class="col s12 m6 l6">
@@ -93,20 +92,16 @@
             </div>
             <div class="row section blue lighten-1 ">
 
-                <!-- <div class="col l6 s12 valign-wrapper" style="height:100%">
-                    <div class="valign multipleImages">
-                        <img class="responsive-img multImage1" src="assets/img/medgate.webp">
-                        <img class="responsive-img multImage2" src="assets/img/medi24.webp">
-                    </div>
-                </div> -->
                 <div class="col l6 s12 valign-wrapper" style="height:100%">
                     <div class="valign">
-                        <img class="responsive-img" src="assets/img/medgatemedi24.png">
+                        <a href="http://www.medoctor.com" target="_blank">
+                            <img class="responsive-img" src="assets/img/beatingheart.gif" width="200px"></a>
                     </div>
                 </div>
                 <div class="col l6 s12 valign-wrapper" style="height:100%">
                     <div class="valign">
-                        <h4 class="white-text ">Avec MonCheckUp.ch, faites un <b>Test de Santé</b> gratuit (25 à 50 questions sur vos symptômes)</h4>
+                        <h4 class="white-text ">With MonCheckUp.ch, do a free <b>Health Assessment</b> (25 to 50
+                            questions on your symptoms)</h4>
                     </div>
                 </div>
             </div>
@@ -122,18 +117,22 @@
                     <div style="margin: 0.5em;">
                         <div class="row">
                             <div>
-                                <h4 class="grey-text text-darken-1">Je prends contact avec MonCheckUp pour être mieux informé sur ma santé, mes coûts et mes couvertures d'assurances</h4>
+                                <h4 class="grey-text text-darken-1">I want to contact MonCheckUp.ch to be better
+                                    informed on
+                                    my health, my costs
+                                    and my insurance
+                                    coverage</h4>
                             </div>
                         </div>
                         <form>
                             <div class="row">
                                 <div class="input-field">
-                                    <input placeholder="Prénom" id="first_name" type="text" class="validate">
+                                    <input placeholder="First Name" id="first_name" type="text" class="validate">
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="input-field">
-                                    <input placeholder="Nom de Famille" id="last_name" type="text" class="validate">
+                                    <input placeholder="Last Name" id="last_name" type="text" class="validate">
                                 </div>
                             </div>
                             <div class="row">
@@ -143,114 +142,119 @@
                             </div>
                             <div class="row">
                                 <div class="input-field">
-                                    <input placeholder="Téléphone" id="phone" type="tel" class="validate">
+                                    <input placeholder="Phone" id="phone" type="tel" class="validate">
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="input-field">
-                                    <input placeholder="NPostal ou Localité" id="ziptown" type="text" class="validate">
+                                    <input placeholder="Zip Code or Town" id="ziptown" type="text" class="validate">
                                 </div>
                             </div>
                             <div class="row">
                                 <div>
-                                    Êtes-vous une famille (groupe de 2 ou plus) ou une personne seule ?
+                                    Are you a family (group of 2 or more) or single?
                                     <p>
                                         <label>
                                             <input name="family" type="radio" />
-                                            <span>Famille (groupe de 2 ou plus)</span>
+                                            <span>Family (group of 2 or more)</span>
                                         </label>
                                     </p>
                                     <p>
                                         <label>
                                             <input name="family" type="radio" checked />
-                                            <span>Une personne</span>
+                                            <span>Single</span>
                                         </label>
                                     </p>
                                 </div>
                             </div>
                             <div class="row">
                                 <div>
-                                    Avez-vous déjà parlé avec un médecin-conseil par téléphone avant de voir un médecin ?
+                                    Did you ever speak to a physician over the phone before seeing a doctor?
                                     <p>
                                         <label>
                                             <input name="physicianPhone" type="radio" checked />
-                                            <span>Non</span>
+                                            <span>No</span>
                                         </label>
                                     </p>
                                     <p>
                                         <label>
                                             <input name="physicianPhone" type="radio" />
-                                            <span>Oui</span>
+                                            <span>Yes</span>
                                         </label>
                                     </p>
                                 </div>
                             </div>
                             <div class="row">
                                 <div>
-                                    Connaissez-vous Medi24 ou MEDGate ?
+                                    Have you ever heard of Medi24 or MedGate?
                                     <p>
                                         <label>
                                             <input name="medi24" type="radio" checked />
-                                            <span>Non</span>
+                                            <span>No</span>
                                         </label>
                                     </p>
                                     <p>
                                         <label>
                                             <input name="medi24" type="radio" />
-                                            <span>Oui</span>
+                                            <span>Yes</span>
                                         </label>
                                     </p>
                                 </div>
                             </div>
                             <div class="row">
                                 <div>
-                                    Saviez-vous qu'un médecin conseil peut réduire vos primes d'assurances jusqu'à 10% ?
+                                    Did you know that using a physician over the phone can reduce your health insurance
+                                    premiums
+                                    up to 15%?
                                     <p>
                                         <label>
                                             <input name="insuranceReduce" type="radio" checked />
-                                            <span>Non</span>
+                                            <span>No</span>
                                         </label>
                                     </p>
                                     <p>
                                         <label>
                                             <input name="insuranceReduce" type="radio" />
-                                            <span>Oui</span>
+                                            <span>Yes</span>
                                         </label>
                                     </p>
                                 </div>
                             </div>
                             <div class="row">
                                 <div>
-                                    Cela vous dérangerait-il de parler au téléphone avec un médecin-conseil avant de parler avec un médecin traditionnel ?
+                                    Would it disturb you to a physician over the phone before seeing a traditional
+                                    doctor?
                                     <p>
                                         <label>
                                             <input name="disturbPhone" type="radio" checked />
-                                            <span>Non</span>
+                                            <span>No</span>
                                         </label>
                                     </p>
                                     <p>
                                         <label>
                                             <input name="disturbPhone" type="radio" />
-                                            <span>Cela me dérange, mais à peine</span>
+                                            <span>It barely disturbes me</span>
                                         </label>
                                     </p>
                                     <p>
                                         <label>
                                             <input name="disturbPhone" type="radio" />
-                                            <span>Cela me dérange</span>
+                                            <span>It disturbes me</span>
                                         </label>
                                     </p>
                                     <p>
                                         <label>
                                             <input name="disturbPhone" type="radio" />
-                                            <span>Cela me dérange énormément</span>
+                                            <span>It disturbes me very much</span>
                                         </label>
                                     </p>
                                 </div>
                             </div>
                             <div class="row center">
                                 <div>
-                                    <button class="btn red waves-effect waves-light" type="submit" name="action">Je prends contact<i class="material-icons right">send</i>
+                                    <button class="btn red waves-effect waves-light" type="submit" name="action">Please
+                                        Contact Me
+                                        <i class="material-icons right">send</i>
                                     </button>
                                 </div>
                             </div>
@@ -262,11 +266,11 @@
                         <div class="row">
                             <a href="http://www.medoctor.com" target="_blank">
                                 <img class="responsive-img" src="assets/img/downarrow.gif" width="100px"></a>
-                            <h4 class="grey-text text-darken-1">et découvrez votre Nécessité d'aller voir le Médecin</h4>
-                            <h4 class="blue-text text-lighten-1">Disponible 24 / 7</h4>
-                            <h4 class="grey-text text-darken-1">Toujours Gratuit et sans Engagement</h4>
-                            <h4 class="blue-text text-lighten-1">Parlez-en à votre Famille et à vos Amis</h4>
-                            <h4 class="grey-text text-darken-1">Testé 38'900 fois</h4>
+                            <h4 class="grey-text text-darken-1">and discover your Need or not to speak to a Doctor</h4>
+                            <h4 class="blue-text text-lighten-1">Available 24 / 7</h4>
+                            <h4 class="grey-text text-darken-1">Always Free, no Strings attached</h4>
+                            <h4 class="blue-text text-lighten-1">Tell your Friends and Family about it</h4>
+                            <h4 class="grey-text text-darken-1">Tested 38'900 Times</h4>
                             <a href="http://www.medoctor.com" target="_blank">
                                 <img class="responsive-img" src="assets/img/downarrow.gif" width="100px"></a>
 
@@ -288,10 +292,10 @@
             <div class="row">
                 <div class="col s12">
                     <a href="http://www.medoctor.com" target="_blank">
-                        <img class="responsive-img" src="assets/img/medgate-cabinet.webp" width="700px;"></a>
+                        <img class="responsive-img" src="assets/img/bodyscan.gif" width="700px;"></a>
                 </div>
                 <div class="col s12">
-                    <a class="waves-effect waves-light btn-large blue lighten-1">A Propos de MonCheckUp.ch</a>
+                    <a class="waves-effect waves-light btn-large blue lighten-1">About MonCheckUp.ch</a>
                 </div>
             </div>
         </div>

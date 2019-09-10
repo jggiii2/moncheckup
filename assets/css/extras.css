@@ -1,0 +1,42 @@
+/* Custom Stylesheet */
+/**
+ * Added by Sylvester Klirowski
+ *
+ */
+
+ /* Images on top of each other */
+ .multipleImages {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .multImage1 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 250px;
+  }
+  .multImage2 {
+    position: absolute;
+    top: 60px;
+    left: 170px;
+    width: 250px;
+  }
+
+  @media only screen and (max-width: 1250px) {
+    .multImage1 {
+        width: 200px;
+      }
+      .multImage2 {
+        top: 50px;
+        left: 140px;
+        width: 200px;
+      }
+  }
+  @media only screen and (max-width: 992px) {
+      .multImage2 {
+        position: absolute;
+        top: 0px;
+        left: 205px;
+      }
+  }
