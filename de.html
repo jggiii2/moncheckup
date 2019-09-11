@@ -121,20 +121,23 @@
                                     Gesundheit, meine Kosten und meinen Versicherungsschutz zu informieren</h4>
                             </div>
                         </div>
-                        <form>
+                        <form id="mcuForm" action="mailer.php">
                             <div class="row">
                                 <div class="input-field">
-                                    <input placeholder="Vorname" id="first_name" type="text" class="validate">
+                                    <input placeholder="Vorname" id="first_name" type="text" class="validate" required>
+                                    <span class="helper-text" data-error="Vorname muss ausgefüllt werden."></span>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="input-field">
-                                    <input placeholder="Nachname" id="last_name" type="text" class="validate">
+                                    <input placeholder="Nachname" id="last_name" type="text" class="validate" required>
+                                    <span class="helper-text" data-error="Nachname muss ausgefüllt werden."></span>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="input-field">
-                                    <input placeholder="Email" id="email" type="email" class="validate">
+                                    <input placeholder="Email" id="email" type="email" class="validate" required>
+                                    <span class="helper-text" data-error="Email muss ausgefüllt werden."></span>
                                 </div>
                             </div>
                             <div class="row">
@@ -144,8 +147,10 @@
                             </div>
                             <div class="row">
                                 <div class="input-field">
-                                    <input placeholder="PLZahl oder Lokalität" id="ziptown" type="text"
-                                        class="validate">
+                                    <input placeholder="PLZahl oder Lokalität" id="ziptown" type="text" class="validate"
+                                        required>
+                                    <span class="helper-text"
+                                        data-error="PLZahl oder Lokalität muss ausgefüllt werden."></span>
                                 </div>
                             </div>
                             <div class="row">
@@ -293,7 +298,8 @@
                         <img class="responsive-img" src="assets/img/bodyscan.gif" width="700px;"></a>
                 </div>
                 <div class="col s12">
-                    <a class="waves-effect waves-light btn-large blue lighten-1">About MonCheckUp.ch</a>
+                    <a class="waves-effect waves-light btn-large blue lighten-1"
+                        href="https://www.facebook.com/MonCheckUp" target="_blank">About MonCheckUp.ch</a>
                 </div>
             </div>
         </div>
