@@ -1,348 +1,578 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="description"
-        content="Sintomo tester - 1000 malattie - Allergia, diabete, influenza, lombalgia, sciatica, cancro della pelle, cancro al colon, cuore | Unico in Svizzera">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords"
-        content="controllo, sintomi, salute, ottimizza, assicurazione, dolore, cervicale, schiena, ginocchio, dolore, diabete, cancro, cuore, pelle">
+    <meta
+      name="description"
+      content="Sintomo tester - 1000 malattie - Allergia, diabete, influenza, lombalgia, sciatica, cancro della pelle, cancro al colon, cuore | Unico in Svizzera"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="controllo, sintomi, salute, ottimizza, assicurazione, dolore, cervicale, schiena, ginocchio, dolore, diabete, cancro, cuore, pelle"
+    />
     <title>Controlla i tuoi sintomi | MyCheckUp.ch | Test di salute</title>
 
     <!-- CSS  -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="assets/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-    <link href="assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/css/materialize.min.css"
+      type="text/css"
+      rel="stylesheet"
+      media="screen,projection"
+    />
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+    <link
+      href="assets/css/style.css"
+      type="text/css"
+      rel="stylesheet"
+      media="screen,projection"
+    />
+    <link
+      href="assets/css/extras.css"
+      type="text/css"
+      rel="stylesheet"
+      media="screen,projection"
+    />
 
     <!-- ICONS -->
-    <link rel="icon" href="favicon.jpg" type="favicon.jpg">
-    <link rel="shortcut icon" type="assets/img/favicon.jpg" href="assets/img/favicon.jpg" />
-</head>
+    <link rel="icon" href="assets/img/favicon.jpg" />
+    <link
+      rel="shortcut icon"
+      type="assets/img/favicon.jpg"
+      href="assets/img/favicon.jpg"
+    />
+  </head>
 
-<body>
+  <body>
     <!-- NAVBAR -->
     <div class="navbar">
-        <div class="navbar-fixed">
-            <nav class="blue" role="navigation">
-                <div class="nav-wrapper container">
-                    <a href="#" class="brand-logo white-text">
-                        MCU
-                    </a>
-                    <ul class="right hide-on-med-and-down">
-                        <li>
-                            <a class="white-text" href="index.html">FR</a>
-                        </li>
-                        <li>
-                            <a class="white-text" href="de.html">DE</a>
-                        </li>
-                        <li>
-                            <a class="white-text" href="#">IT</a>
-                        </li>
-                        <li>
-                            <a class="white-text" href="eng.html">ENG</a>
-                        </li>
-                    </ul>
-                    <a href="#" data-target="nav-mobile" class="sidenav-trigger white-text"><i
-                            class="material-icons">menu</i></a>
-                </div>
-            </nav>
+      <div class="navbar-fixed">
+        <nav class="blue" role="navigation">
+          <div class="nav-wrapper container">
+            <a href="#" class="brand-logo logo white-text">
+              <img
+                src="./assets/img/MyCheckUpLogo.png"
+                alt="MCU"
+                width="90"
+                height="auto"
+              />
+            </a>
+            <ul class="right hide-on-med-and-down">
+              <li>
+                <a class="white-text" href="index.html">FR</a>
+              </li>
+              <li>
+                <a class="white-text" href="de.html">DE</a>
+              </li>
+              <li>
+                <a class="white-text" href="#">IT</a>
+              </li>
+              <li>
+                <a class="white-text" href="eng.html">ENG</a>
+              </li>
+            </ul>
+            <a
+              href="#"
+              data-target="nav-mobile"
+              class="sidenav-trigger white-text"
+              ><i class="material-icons">menu</i></a
+            >
+          </div>
+        </nav>
+      </div>
 
-        </div>
-
-        <!-- this needs to be moved out .navbar fixed to work in mobile -->
-        <ul id="nav-mobile" class="sidenav">
-            <li>
-                <a href="index.html">FR</a>
-            </li>
-            <li>
-                <a href="de.html">DE</a>
-            </li>
-            <li>
-                <a href="#">IT</a>
-            </li>
-            <li>
-                <a href="eng.html">ENG</a>
-            </li>
-        </ul>
+      <!-- this needs to be moved out .navbar fixed to work in mobile -->
+      <ul id="nav-mobile" class="sidenav">
+        <li>
+          <a href="index.html">FR</a>
+        </li>
+        <li>
+          <a href="de.html">DE</a>
+        </li>
+        <li>
+          <a href="#">IT</a>
+        </li>
+        <li>
+          <a href="eng.html">ENG</a>
+        </li>
+      </ul>
     </div>
-
-
 
     <!-- HEADER -->
     <div class="container center">
-        <div class="section">
+      <div class="section">
+        <div class="row center">
+          <div class="col s12 m6 l6">
             <div class="row center">
-                <div class="col s12 m6 l6">
-                    <div class="row center">
-                        <h4 class="blue-text text-lighten-1">Il mio Trattamento è ben coperto dalla mia Assicurazione?
-                        </h4>
-                        <h4 class="grey-text text-darken-1">Ho mai speso inutilmente i miei Soldi per l'Assistenza
-                            Sanitaria che non avevo?</h4>
-                        <h4 class="blue-text text-lighten-1">Dovrei davvero andare dal Medico?</h4>
-                    </div>
-                </div>
-                <div class="col s12 m6 l6">
-                    <div class="row center">
-                        <a href="http://www.medoctor.com" target="_blank">
-                            <img class="responsive-img" src="assets/img/ladydoctor.webp" width="312px"
-                                height="624px"></a>
-                    </div>
-                </div>
+              <h4 class="blue-text text-lighten-1">
+                Il mio Trattamento è ben coperto dalla mia Assicurazione?
+              </h4>
+              <h4 class="grey-text text-darken-1">
+                Ho mai speso inutilmente i miei Soldi per l'Assistenza Sanitaria
+                che non avevo?
+              </h4>
+              <h4 class="blue-text text-lighten-1">
+                Dovrei davvero andare dal Medico?
+              </h4>
             </div>
-            <div class="row section blue lighten-1 ">
-
-                <div class="col l6 s12 valign-wrapper" style="height:100%">
-                    <div class="valign">
-                        <a href="http://www.medoctor.com" target="_blank">
-                            <img class="responsive-img" src="assets/img/beatingheart.gif" width="200px"></a>
-                    </div>
-                </div>
-                <div class="col l6 s12 valign-wrapper" style="height:100%">
-                    <div class="valign">
-                        <h4 class="white-text ">Con MonCheckUp.ch, fare un <b>Test Gratuito della Sanità</b> (da 25 a 50
-                            domande sui tuoi sintomi)</h4>
-                    </div>
-                </div>
+          </div>
+          <div class="col s12 m6 l6">
+            <div class="row center">
+              <img
+                class="responsive-img"
+                src="assets/img/ladydoctor.webp"
+                width="312px"
+                height="624px"
+              />
             </div>
-
+          </div>
         </div>
+      </div>
     </div>
 
-    <!-- FORM -->
+    <!-- MAIN -->
     <div class="container">
-        <div class="section">
-            <div class="row">
-                <div class="col s12 m6 l6 grey lighten-5">
-                    <div style="margin: 0.5em;">
-                        <div class="row">
-                            <div>
-                                <h4 class="grey-text text-darken-1">Prendo contatto MonCheckUp.ch per essere informato
-                                    sulla mia salute, i miei costi e la mia copertura assicurativa</h4>
-                            </div>
-                        </div>
-                        <form id="mcuForm" action="mailer.php">
-                            <div class="row">
-                                <div class="input-field">
-                                    <input placeholder="Conome" id="first_name" type="text" class="validate" required>
-                                    <span class="helper-text" data-error="Conome deve essere compilato."></span>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="input-field">
-                                    <input placeholder="Nome" id="last_name" type="text" class="validate" required>
-                                    <span class="helper-text" data-error="Nome deve essere compilato."></span>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="input-field">
-                                    <input placeholder="Email" id="email" type="email" class="validate" required>
-                                    <span class="helper-text" data-error="Email deve essere compilato."></span>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="input-field">
-                                    <input placeholder="Telefono" id="phone" type="tel" class="validate">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="input-field">
-                                    <input placeholder="NPostale o Località" id="ziptown" type="text" class="validate"
-                                        required>
-                                    <span class="helper-text"
-                                        data-error="NPostale o Località deve essere compilato."></span>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div>
-                                    Sei una famiglia (gruppo di 2 o più) o single?
-                                    <p>
-                                        <label>
-                                            <input name="family" type="radio" />
-                                            <span>Familia (gruppo di 2 o più)</span>
-                                        </label>
-                                    </p>
-                                    <p>
-                                        <label>
-                                            <input name="family" type="radio" checked />
-                                            <span>Single</span>
-                                        </label>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div>
-                                    Hai mai parlato con un medico per telefono prima di vedere un medico?
-                                    <p>
-                                        <label>
-                                            <input name="physicianPhone" type="radio" checked />
-                                            <span>No</span>
-                                        </label>
-                                    </p>
-                                    <p>
-                                        <label>
-                                            <input name="physicianPhone" type="radio" />
-                                            <span>Sì</span>
-                                        </label>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div>
-                                    Conosci Medi24 o MEDGate?
-                                    <p>
-                                        <label>
-                                            <input name="medi24" type="radio" checked />
-                                            <span>No</span>
-                                        </label>
-                                    </p>
-                                    <p>
-                                        <label>
-                                            <input name="medi24" type="radio" />
-                                            <span>Sì</span>
-                                        </label>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div>
-                                    Sai che un medico per telefono può ridurre i premi assicurativi fino al 15%?
-                                    <p>
-                                        <label>
-                                            <input name="insuranceReduce" type="radio" checked />
-                                            <span>No</span>
-                                        </label>
-                                    </p>
-                                    <p>
-                                        <label>
-                                            <input name="insuranceReduce" type="radio" />
-                                            <span>Sì</span>
-                                        </label>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div>
-                                    Ti dispiacerebbe parlare al telefono con un medico prima di parlare con un medico
-                                    tradizionale?
-                                    <p>
-                                        <label>
-                                            <input name="disturbPhone" type="radio" checked />
-                                            <span>No</span>
-                                        </label>
-                                    </p>
-                                    <p>
-                                        <label>
-                                            <input name="disturbPhone" type="radio" />
-                                            <span>Mi disturba, ma poco</span>
-                                        </label>
-                                    </p>
-                                    <p>
-                                        <label>
-                                            <input name="disturbPhone" type="radio" />
-                                            <span>Mi disturba</span>
-                                        </label>
-                                    </p>
-                                    <p>
-                                        <label>
-                                            <input name="disturbPhone" type="radio" />
-                                            <span>Mi disturba enormemente</span>
-                                        </label>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="row center">
-                                <div>
-                                    <button class="btn red waves-effect waves-light" type="submit" name="action">Prendo
-                                        contatto
-                                        <i class="material-icons right">send</i>
-                                    </button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="col s12 m6 l6 center">
-                    <div style="margin: 0.5em;">
-                        <div class="row">
-                            <a href="http://www.medoctor.com" target="_blank">
-                                <img class="responsive-img" src="assets/img/downarrow.gif" width="100px"></a>
-                            <h4 class="grey-text text-darken-1">e scopri la tua Necessità di consultare il Medico</h4>
-                            <h4 class="blue-text text-lighten-1">Disponiblie 24 / 7</h4>
-                            <h4 class="grey-text text-darken-1">Sempre Gratuito e senza Impegno</h4>
-                            <h4 class="blue-text text-lighten-1">Parla con la tua Famiglia e i tuoi Amici</h4>
-                            <h4 class="grey-text text-darken-1">Testato 38'900 Volte</h4>
-                            <a href="http://www.medoctor.com" target="_blank">
-                                <img class="responsive-img" src="assets/img/downarrow.gif" width="100px"></a>
-
-                        </div>
-                        <div class="row">
-                            <a href="http://www.medoctor.com" target="_blank">
-                                <img class="responsive-img" src="assets/img/temp_medoctor.png"></a>
-                        </div>
-                    </div>
-                </div>
+      <div class="section">
+        <div class="row">
+          <div class="row section blue lighten-1 center">
+            <div class="col s12 valign-wrapper">
+              <div class="valign">
+                <img
+                  class="responsive-img"
+                  src="assets/img/beatingheart.gif"
+                  width="300"
+                  height="auto"
+                />
+                <h4 class="white-text">
+                  Con MonCheckUp.ch, fare un
+                  <b>Test Gratuito della Sanità</b> (da 25 a 50 domande sui tuoi
+                  sintomi)
+                </h4>
+              </div>
             </div>
+          </div>
+          <div class="col s12 center">
+            <div>
+              <div class="row">
+                <h4 class="grey-text text-darken-1">
+                  e scopri la tua Necessità di consultare il Medico
+                </h4>
+                <h4 class="blue-text text-lighten-1">Disponiblie 24 / 7</h4>
+                <h4 class="grey-text text-darken-1">
+                  Sempre Gratuito e senza Impegno
+                </h4>
+                <h4 class="blue-text text-lighten-1">
+                  Parla con la tua Famiglia e i tuoi Amici
+                </h4>
+                <h4 class="grey-text text-darken-1">Testato 38'900 Volte</h4>
+                <img
+                  class="responsive-img"
+                  src="assets/img/downarrow.gif"
+                  width="80px"
+                />
+              </div>
+              <div class="row">
+                <div class="col s12 m6 offset-m3">
+                  <div class="card blue-grey darken-1">
+                    <form
+                      class="col s12"
+                      id="setInfoForm"
+                      method="POST"
+                      action="interview"
+                      target="_parent"
+                    >
+                      <input
+                        type="hidden"
+                        name="command"
+                        value="STARTANONYMOUS"
+                      />
 
+                      <div class="input-field">
+                        <select id="gender" name="gender" required>
+                          <option selected disabled>Il mio genere</option>
+                          <option value="male">Maschio</option>
+                          <option value="female">Femmina</option>
+                        </select>
+                      </div>
+
+                      <div class="input-field">
+                        <select id="birthyear" name="birthyear" required>
+                          <option selected disabled
+                            >La mia data di nascita</option
+                          >
+                        </select>
+                      </div>
+
+                      <div class="input-field">
+                        <select id="onset" name="onset" required>
+                          <option disabled selected value=""
+                            >I miei sintomi sono iniziati</option
+                          >
+                          <option value="onsetLessThan72"
+                            >Meno di 3 giorni fa</option
+                          >
+                          <option value="onsetGreaterThan72"
+                            >3 a 30 giorni fa</option
+                          >
+                          <option value="onsetMonth"
+                            >Più di 30 giorni fa</option
+                          >
+                        </select>
+                      </div>
+
+                      <div class="input-field">
+                        <p>
+                          <label>
+                            <input
+                              type="checkbox"
+                              id="disclaimer"
+                              name="disclaimer"
+                              value="yes"
+                              required
+                              class="filled-in"
+                            />
+                            <span>
+                              Accetto il
+                              <a
+                                href="#dialogModal"
+                                class="text-link modal-trigger"
+                                id="disclaimer-link"
+                                >disclaimer
+                              </a>
+                            </span>
+                          </label>
+                        </p>
+                      </div>
+
+                      <div class="input-field">
+                        <button
+                          class="btn red waves-effect waves-light"
+                          type="submit"
+                          id="submit-initial-assessment"
+                          value="Start my free Interview"
+                        >
+                          Inizia la mia intervista gratuita
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- About Link -->
     <div class="container">
-        <div class="section center">
-            <div class="row">
-                <div class="col s12">
-                    <a href="http://www.medoctor.com" target="_blank">
-                        <img class="responsive-img" src="assets/img/bodyscan.gif" width="700px;"></a>
-                </div>
-                <div class="col s12">
-                    <a class="waves-effect waves-light btn-large blue lighten-1"
-                        href="https://www.facebook.com/MonCheckUp" target="_blank">Sulla MonCheckUp.ch</a>
-                </div>
-            </div>
+      <div class="section center">
+        <div class="row">
+          <div class="col s12">
+            <img
+              class="responsive-img"
+              src="assets/img/bodyscan.gif"
+              width="700px;"
+            />
+          </div>
         </div>
+      </div>
+    </div>
+
+    <!-- MCU Form -->
+    <div class="container">
+      <div class="section">
+        <div class="row">
+          <div class="col s12 m6 offset-m3 grey lighten-5">
+            <div style="margin: 0.75em;">
+              <div class="row">
+                <div>
+                  <h4 class="grey-text text-darken-1">
+                    Prendo contatto MonCheckUp.ch per essere informato sulla mia
+                    salute, i miei costi e la mia copertura assicurativa
+                  </h4>
+                </div>
+              </div>
+              <form id="mcuForm" action="mailer.php">
+                <div class="row">
+                  <div class="input-field">
+                    <input
+                      placeholder="Conome"
+                      id="first_name"
+                      type="text"
+                      class="validate"
+                      required
+                    />
+                    <span
+                      class="helper-text"
+                      data-error="Conome deve essere compilato"
+                    ></span>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field">
+                    <input
+                      placeholder="Nome"
+                      id="last_name"
+                      type="text"
+                      class="validate"
+                      required
+                    />
+                    <span
+                      class="helper-text"
+                      data-error="Nome deve essere compilato"
+                    ></span>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field">
+                    <input
+                      placeholder="Email"
+                      id="email"
+                      type="email"
+                      class="validate"
+                      required
+                    />
+                    <span
+                      class="helper-text"
+                      data-error="Email deve essere compilato"
+                    ></span>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field">
+                    <input
+                      placeholder="Telefono"
+                      id="phone"
+                      type="tel"
+                      class="validate"
+                    />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field">
+                    <input
+                      placeholder="NPostale o Località"
+                      id="ziptown"
+                      type="text"
+                      class="validate"
+                      required
+                    />
+                    <span
+                      class="helper-text"
+                      data-error="NPostale o Località deve essere compilato"
+                    ></span>
+                  </div>
+                </div>
+                <div class="row">
+                  <div>
+                    Sei una famiglia (gruppo di 2 o più) o single?
+                    <p>
+                      <label>
+                        <input name="family" type="radio" />
+                        <span>Familia (gruppo di 2 o più)</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                        <input name="family" type="radio" checked />
+                        <span>Single</span>
+                      </label>
+                    </p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div>
+                    Hai mai parlato con un medico per telefono prima di vedere
+                    un medico?
+                    <p>
+                      <label>
+                        <input name="physicianPhone" type="radio" checked />
+                        <span>No</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                        <input name="physicianPhone" type="radio" />
+                        <span>Si</span>
+                      </label>
+                    </p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div>
+                    Conosci Medi24 o MEDGate?
+                    <p>
+                      <label>
+                        <input name="medi24" type="radio" checked />
+                        <span>No</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                        <input name="medi24" type="radio" />
+                        <span>Si</span>
+                      </label>
+                    </p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div>
+                    Sai che un medico per telefono può ridurre i premi
+                    assicurativi fino al 15%?
+                    <p>
+                      <label>
+                        <input name="insuranceReduce" type="radio" checked />
+                        <span>No</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                        <input name="insuranceReduce" type="radio" />
+                        <span>Si</span>
+                      </label>
+                    </p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div>
+                    Ti dispiacerebbe parlare al telefono con un medico prima di
+                    parlare con un medico tradizionale?
+                    <p>
+                      <label>
+                        <input name="disturbPhone" type="radio" checked />
+                        <span>No</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                        <input name="disturbPhone" type="radio" />
+                        <span>Mi disturba, ma poco</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                        <input name="disturbPhone" type="radio" />
+                        <span>Mi disturba</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                        <input name="disturbPhone" type="radio" />
+                        <span>Mi disturba enormemente</span>
+                      </label>
+                    </p>
+                  </div>
+                </div>
+                <div class="row center">
+                  <div>
+                    <button
+                      class="btn red waves-effect waves-light"
+                      type="submit"
+                      name="action"
+                    >
+                      Prendo contatto
+                      <i class="material-icons right">send</i>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Link -->
+    <div class="container">
+      <div class="section center">
+        <div class="row">
+          <div class="col s12 m6 offset-m3">
+            <a
+              class="waves-effect waves-light btn-large blue lighten-1"
+              href="https://www.facebook.com/MonCheckUp"
+              style="width: 100%;"
+              target="_blank"
+              >Di MonCheckUp.ch</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Disclaimer Modal -->
+    <div id="dialogModal" class="modal">
+      <div class="modal-content">
+        <h4>Medoctor Condizioni</h4>
+        <p>
+            Il materiale di questo sito Web è fornito a scopo didattico e non è destinato a sostituire la consulenza medica del proprio medico o di altri operatori sanitari. Solo i professionisti medici che ti esaminano possono darti consigli medici o diagnosticare il tuo problema medico. Non intendiamo creare una relazione medico-paziente. La tua dipendenza dalle informazioni che ricevi da MEDoctor è esclusivamente a tuo rischio e pericolo poiché MEDoctor non può controllare la valutazione della salute generata dal tuo contributo. Se hai una specifica domanda di salute, contatta il tuo medico. MEDoctor monitora i nuovi sviluppi e progressi della salute e aggiorna i suoi contenuti secondo necessità.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect btn-flat">Chiudi</a>
+      </div>
     </div>
 
     <!-- FOOTER -->
     <footer class="page-footer grey lighten-3 black-text text-lighten-4 center">
-        <div class="container">
-            <div class="row">
-                <div class="col l4 s12" style="margin-bottom: 0.75em;">
-                    <address>
-                        MonCheckUp.ch <br>
-                        Case Postale 1239 <br>
-                        1000 Lausanne <br>
-                        Suisse
-                    </address>
-                </div>
-                <div class="col l4 s12">
-                    <a href="https://www.facebook.com/MonCheckUp" target="_blank" alt="Facebook">
-                        <i class="fa fa-2x fa-facebook" aria-hidden="true"></i>
-                    </a>
-                    <a href="https://twitter.com/MonCheckUp" target="_blank" alt="Twitter">
-                        <i class="fa fa-2x fa-twitter" aria-hidden="true"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/company/MonCheckUp/" target="_blank" alt="LinkedIn">
-                        <i class="fa fa-2x fa-linkedin" aria-hidden="true"></i>
-                    </a>
-                </div>
-                <div class="col l4 s12">
-                    <p>Email: <a href="mailto: my.checkup.suisse@gmail.com">my.checkup.suisse@gmail.com</a></p>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col l4 s12" style="margin-bottom: 0.75em;">
+            <address>
+              MonCheckUp.ch <br />
+              Case Postale 1239 <br />
+              1000 Lausanne <br />
+              Suisse
+            </address>
+          </div>
+          <div class="col l4 s12">
+            <a
+              href="https://www.facebook.com/MonCheckUp"
+              target="_blank"
+              alt="Facebook"
+            >
+              <i class="fa fa-2x fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a
+              href="https://twitter.com/MonCheckUp"
+              target="_blank"
+              alt="Twitter"
+            >
+              <i class="fa fa-2x fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/company/MonCheckUp/"
+              target="_blank"
+              alt="LinkedIn"
+            >
+              <i class="fa fa-2x fa-linkedin" aria-hidden="true"></i>
+            </a>
+          </div>
+          <div class="col l4 s12">
+            <p>
+              Email:
+              <a href="mailto: my.checkup.suisse@gmail.com"
+                >my.checkup.suisse@gmail.com</a
+              >
+            </p>
+          </div>
         </div>
-        <div class="footer-copyright">
-            <div class="container center">
-                <a href="legal.html" style="text-decoration: underline">Legal
-                </a> - © 2019 Copyright MonCheckUp.ch
-            </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container center">
+          <a href="legal.html" style="text-decoration: underline">Legal </a> - ©
+          2019 Copyright MonCheckUp.ch
         </div>
+      </div>
     </footer>
+
     <!--  Scripts-->
     <script src="assets/js/jquery-2.1.1.min.js"></script>
     <script src="assets/js/materialize.js"></script>
     <script src="assets/js/init.js"></script>
-</body>
-
+  </body>
 </html>
