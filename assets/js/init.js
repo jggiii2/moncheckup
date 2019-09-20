@@ -64,7 +64,7 @@ const toggleNavLogoImage = function(){
     navbarLogoImage.removeAttribute('hidden')
     navbarLogoLink.setAttribute('class', 'brand-logo logo white-text')
   } else {
-    navbarLogoImage.setAttribute('hidden', false)
+    navbarLogoImage.setAttribute('hidden', true)
     navbarLogoLink.setAttribute('class', 'brand-logo logo white-text center')
   }
 }
