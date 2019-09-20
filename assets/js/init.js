@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
 const navbarLogoLink = document.querySelector('#navbar-logo-link');
 const navbarLogoImage = document.querySelector('#navbar-logo-image');
 const toggleNavLogoImage = function(){
-  if(window.innerWidth > 725){
+  if(window.innerWidth > 740){
     navbarLogoImage.removeAttribute('hidden')
     navbarLogoLink.setAttribute('class', 'brand-logo logo white-text')
   } else {
