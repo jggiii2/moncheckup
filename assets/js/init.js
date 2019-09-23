@@ -54,3 +54,19 @@ document.addEventListener('DOMContentLoaded', function() {
   var elems = document.querySelectorAll('.modal');
   var instances = M.Modal.init(elems);
 });
+
+/* NAVBAR */
+// Toggle logo image and text
+const navbarLogoLink = document.querySelector('#navbar-logo-link');
+const navbarLogoImage = document.querySelector('#navbar-logo-image');
+const toggleNavLogoImage = function(){
+  if(window.innerWidth > 740){
+    navbarLogoImage.removeAttribute('hidden')
+    navbarLogoLink.setAttribute('class', 'brand-logo logo white-text')
+  } else {
+    navbarLogoImage.setAttribute('hidden', true)
+    navbarLogoLink.setAttribute('class', 'brand-logo logo white-text center')
+  }
+}
+document.addEventListener('DOMContentLoaded', toggleNavLogoImage);
+window.addEventListener('resize', toggleNavLogoImage);
