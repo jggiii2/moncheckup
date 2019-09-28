@@ -4,13 +4,38 @@
    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
    version="4.0">
     <display-name>Moncheckup</display-name>
+    <context-param>
+        <description>The address to use in the from address for emails sent by the application</description>
+        <param-name>com.medoctor.email.fromEmail</param-name>
+        <param-value>info@medoctor.com</param-value>
+    </context-param>
+    <context-param>
+        <description>The 'full name' to use when sending emails from the server</description>
+        <param-name>com.medoctor.email.fromFN</param-name>
+        <param-value>MEDoctor</param-value>
+    </context-param>
+    <context-param>
+        <description>The email to send bounces to.</description>
+        <param-name>com.medoctor.email.bounce</param-name>
+        <param-value>jggiii2@medoctor.com</param-value>
+    </context-param>
+    <context-param>
+        <description>The host to send emails to. Usually localhost.</description>
+        <param-name>com.medoctor.email.host</param-name>
+        <param-value>localhost</param-value>
+    </context-param>
+    <context-param>
+        <description>The address to send registrations to</description>
+        <param-name>com.medoctor.email.registration</param-name>
+        <param-value>info@medoctor.com</param-value>
+    </context-param>
     <servlet>
-        <servlet-name>interview</servlet-name>
-        <servlet-class>com.medoctor.servlets.Interview</servlet-class>
+        <servlet-name>registration</servlet-name>
+        <servlet-class>com.medoctor.servlets.Registration</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>interview</servlet-name>
-        <url-pattern>/interview</url-pattern>
+        <servlet-name>registration</servlet-name>
+        <url-pattern>/register</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

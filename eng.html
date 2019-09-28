@@ -306,12 +306,13 @@
                   </h4>
                 </div>
               </div>
-              <form id="mcuForm" action="mailer.php">
+                <form id="mcuForm" action="register" method="post">
                 <div class="row">
                   <div class="input-field">
                     <input
                       placeholder="First Name"
                       id="first_name"
+                      name="first_name"
                       type="text"
                       class="validate"
                       required
@@ -327,6 +328,7 @@
                     <input
                       placeholder="Last Name"
                       id="last_name"
+                      name="last_name"
                       type="text"
                       class="validate"
                       required
@@ -342,6 +344,7 @@
                     <input
                       placeholder="Email"
                       id="email"
+                      name="email"
                       type="email"
                       class="validate"
                       required
@@ -357,6 +360,7 @@
                     <input
                       placeholder="Phone"
                       id="phone"
+                      name="phone"
                       type="tel"
                       class="validate"
                     />
@@ -367,6 +371,7 @@
                     <input
                       placeholder="Zip Code or Town"
                       id="ziptown"
+                      name="ziptown"
                       type="text"
                       class="validate"
                       required
@@ -382,13 +387,13 @@
                     Are you a family (group of 2 or more) or single?
                     <p>
                       <label>
-                        <input name="family" type="radio" />
+                        <input name="family" type="radio" value="family" />
                         <span>Family (group of 2 or more)</span>
                       </label>
                     </p>
                     <p>
                       <label>
-                        <input name="family" type="radio" checked />
+                        <input name="family" type="radio" checked value="single" />
                         <span>Single</span>
                       </label>
                     </p>
@@ -400,13 +405,13 @@
                     seeing a doctor?
                     <p>
                       <label>
-                        <input name="physicianPhone" type="radio" checked />
+                        <input name="physicianPhone" type="radio" checked value="no"/>
                         <span>No</span>
                       </label>
                     </p>
                     <p>
                       <label>
-                        <input name="physicianPhone" type="radio" />
+                        <input name="physicianPhone" type="radio" value="yes"/>
                         <span>Yes</span>
                       </label>
                     </p>
@@ -417,13 +422,13 @@
                     Have you ever heard of Medi24 or MedGate?
                     <p>
                       <label>
-                        <input name="medi24" type="radio" checked />
+                        <input name="medi24" type="radio" checked value="no"/>
                         <span>No</span>
                       </label>
                     </p>
                     <p>
                       <label>
-                        <input name="medi24" type="radio" />
+                        <input name="medi24" type="radio" value="yes"/>
                         <span>Yes</span>
                       </label>
                     </p>
@@ -435,13 +440,13 @@
                     reduce your health insurance premiums up to 15%?
                     <p>
                       <label>
-                        <input name="insuranceReduce" type="radio" checked />
+                        <input name="insuranceReduce" type="radio" checked value="no"/>
                         <span>No</span>
                       </label>
                     </p>
                     <p>
                       <label>
-                        <input name="insuranceReduce" type="radio" />
+                        <input name="insuranceReduce" type="radio" value="yes"/>
                         <span>Yes</span>
                       </label>
                     </p>
@@ -453,26 +458,26 @@
                     seeing a traditional doctor?
                     <p>
                       <label>
-                        <input name="disturbPhone" type="radio" checked />
+                        <input name="disturbPhone" type="radio" checked value="no"/>
                         <span>No</span>
                       </label>
                     </p>
                     <p>
                       <label>
-                        <input name="disturbPhone" type="radio" />
-                        <span>It barely disturbes me</span>
+                        <input name="disturbPhone" type="radio" value="barely"/>
+                        <span>It barely disturbs me</span>
                       </label>
                     </p>
                     <p>
                       <label>
-                        <input name="disturbPhone" type="radio" />
-                        <span>It disturbes me</span>
+                        <input name="disturbPhone" type="radio" value="yes"/>
+                        <span>It disturbs me</span>
                       </label>
                     </p>
                     <p>
                       <label>
-                        <input name="disturbPhone" type="radio" />
-                        <span>It disturbes me very much</span>
+                        <input name="disturbPhone" type="radio" value="very much"/>
+                        <span>It disturbs me very much</span>
                       </label>
                     </p>
                   </div>
