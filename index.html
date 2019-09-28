@@ -304,12 +304,14 @@
                   </h4>
                 </div>
               </div>
-              <form id="mcuForm">
+              <form id="mcuForm" action="register" method="post">
+                <input type="hidden" name="lang" value="fr"/>
                 <div class="row">
                   <div class="input-field">
                     <input
                       placeholder="Prénom"
                       id="first_name"
+                      name="first_name"
                       type="text"
                       class="validate"
                       required
@@ -325,6 +327,7 @@
                     <input
                       placeholder="Nom de Famille"
                       id="last_name"
+                      name="last_name"
                       type="text"
                       class="validate"
                       required
@@ -340,6 +343,7 @@
                     <input
                       placeholder="Email"
                       id="email"
+                      name="email"
                       type="email"
                       class="validate"
                       required
@@ -355,6 +359,7 @@
                     <input
                       placeholder="Téléphone"
                       id="phone"
+                      name="phone"
                       type="tel"
                       class="validate"
                     />
@@ -365,6 +370,7 @@
                     <input
                       placeholder="NPostal ou Localité"
                       id="ziptown"
+                      name="ziptown"
                       type="text"
                       class="validate"
                       required
@@ -383,7 +389,7 @@
                       <label>
                         <input
                           name="family"
-                          value="Family (group of 2 or more)"
+                          value="family"
                           type="radio"
                         />
                         <span>Famille (groupe de 2 ou plus)</span>
@@ -393,7 +399,7 @@
                       <label>
                         <input
                           name="family"
-                          value="Single"
+                          value="single"
                           type="radio"
                           checked
                         />
@@ -410,7 +416,7 @@
                       <label>
                         <input
                           name="physicianPhone"
-                          value="No"
+                          value="no"
                           type="radio"
                           checked
                         />
@@ -419,7 +425,7 @@
                     </p>
                     <p>
                       <label>
-                        <input name="physicianPhone" value="Yes" type="radio" />
+                        <input name="physicianPhone" value="yes" type="radio" />
                         <span>Oui</span>
                       </label>
                     </p>
@@ -430,13 +436,13 @@
                     Connaissez-vous Medi24 ou MEDGate ?
                     <p>
                       <label>
-                        <input name="medi24" value="No" type="radio" checked />
+                        <input name="medi24" value="no" type="radio" checked />
                         <span>Non</span>
                       </label>
                     </p>
                     <p>
                       <label>
-                        <input name="medi24" value="Yes" type="radio" />
+                        <input name="medi24" value="yes" type="radio" />
                         <span>Oui</span>
                       </label>
                     </p>
@@ -450,7 +456,7 @@
                       <label>
                         <input
                           name="insuranceReduce"
-                          value="No"
+                          value="no"
                           type="radio"
                           checked
                         />
@@ -461,7 +467,7 @@
                       <label>
                         <input
                           name="insuranceReduce"
-                          value="Yes"
+                          value="yes"
                           type="radio"
                         />
                         <span>Oui</span>
@@ -478,7 +484,7 @@
                       <label>
                         <input
                           name="disturbPhone"
-                          value="No"
+                          value="no"
                           type="radio"
                           checked
                         />
@@ -489,7 +495,7 @@
                       <label>
                         <input
                           name="disturbPhone"
-                          value="It barely disturbes me"
+                          value="barelydisturbs"
                           type="radio"
                         />
                         <span>Cela me dérange, mais à peine</span>
@@ -499,7 +505,7 @@
                       <label>
                         <input
                           name="disturbPhone"
-                          value="It disturbes me"
+                          value="disturbs"
                           type="radio"
                         />
                         <span>Cela me dérange</span>
@@ -509,7 +515,7 @@
                       <label>
                         <input
                           name="disturbPhone"
-                          value="It disturbes me very much"
+                          value="disturbsmuch"
                           type="radio"
                         />
                         <span>Cela me dérange énormément</span>
@@ -633,6 +639,6 @@
     <script src="assets/js/jquery-2.1.1.min.js"></script>
     <script src="assets/js/materialize.js"></script>
     <script src="assets/js/init.js"></script>
-    <script src="assets/js/formProcess.js"></script>
+    <!--<script src="assets/js/formProcess.js"></script>-->
   </body>
 </html>

@@ -27,7 +27,7 @@
     <context-param>
         <description>The address to send registrations to</description>
         <param-name>com.medoctor.email.registration</param-name>
-        <param-value>info@medoctor.com</param-value>
+        <param-value>my.checkup.suisse@gmail.com</param-value>
     </context-param>
     <servlet>
         <servlet-name>registration</servlet-name>
