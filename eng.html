@@ -301,7 +301,7 @@
                   </h4>
                 </div>
               </div>
-              <form id="mcuForm" action="mailer.php">
+              <form id="mcuForm">
                 <div class="row">
                   <div class="input-field">
                     <input
@@ -377,13 +377,22 @@
                     Are you a family (group of 2 or more) or single?
                     <p>
                       <label>
-                        <input name="family" type="radio" />
+                        <input
+                          name="family"
+                          type="radio"
+                          value="Family (group of 2 or more)"
+                        />
                         <span>Family (group of 2 or more)</span>
                       </label>
                     </p>
                     <p>
                       <label>
-                        <input name="family" type="radio" checked />
+                        <input
+                          name="family"
+                          type="radio"
+                          value="Single"
+                          checked
+                        />
                         <span>Single</span>
                       </label>
                     </p>
@@ -395,13 +404,18 @@
                     seeing a doctor?
                     <p>
                       <label>
-                        <input name="physicianPhone" type="radio" checked />
+                        <input
+                          name="physicianPhone"
+                          value="No"
+                          type="radio"
+                          checked
+                        />
                         <span>No</span>
                       </label>
                     </p>
                     <p>
                       <label>
-                        <input name="physicianPhone" type="radio" />
+                        <input name="physicianPhone" value="Yes" type="radio" />
                         <span>Yes</span>
                       </label>
                     </p>
@@ -412,13 +426,13 @@
                     Have you ever heard of Medi24 or MedGate?
                     <p>
                       <label>
-                        <input name="medi24" type="radio" checked />
+                        <input name="medi24" value="No" type="radio" checked />
                         <span>No</span>
                       </label>
                     </p>
                     <p>
                       <label>
-                        <input name="medi24" type="radio" />
+                        <input name="medi24" value="Yes" type="radio" />
                         <span>Yes</span>
                       </label>
                     </p>
@@ -430,13 +444,22 @@
                     reduce your health insurance premiums up to 15%?
                     <p>
                       <label>
-                        <input name="insuranceReduce" type="radio" checked />
+                        <input
+                          name="insuranceReduce"
+                          value="No"
+                          type="radio"
+                          checked
+                        />
                         <span>No</span>
                       </label>
                     </p>
                     <p>
                       <label>
-                        <input name="insuranceReduce" type="radio" />
+                        <input
+                          name="insuranceReduce"
+                          value="Yes"
+                          type="radio"
+                        />
                         <span>Yes</span>
                       </label>
                     </p>
@@ -448,25 +471,42 @@
                     seeing a traditional doctor?
                     <p>
                       <label>
-                        <input name="disturbPhone" type="radio" checked />
+                        <input
+                          name="disturbPhone"
+                          value="No"
+                          type="radio"
+                          checked
+                        />
                         <span>No</span>
                       </label>
                     </p>
                     <p>
                       <label>
-                        <input name="disturbPhone" type="radio" />
+                        <input
+                          name="disturbPhone"
+                          value="It barely disturbes me"
+                          type="radio"
+                        />
                         <span>It barely disturbes me</span>
                       </label>
                     </p>
                     <p>
                       <label>
-                        <input name="disturbPhone" type="radio" />
+                        <input
+                          name="disturbPhone"
+                          value="It disturbes me"
+                          type="radio"
+                        />
                         <span>It disturbes me</span>
                       </label>
                     </p>
                     <p>
                       <label>
-                        <input name="disturbPhone" type="radio" />
+                        <input
+                          name="disturbPhone"
+                          value="It disturbes me very much"
+                          type="radio"
+                        />
                         <span>It disturbes me very much</span>
                       </label>
                     </p>
@@ -485,6 +525,9 @@
                   </div>
                 </div>
               </form>
+              <div>
+                <h5 class="green-text text-darken-3 center" id="mcuFormSubmitConfirmation" hidden>Thank you for contacting us</h5>
+              </div>
             </div>
           </div>
         </div>
@@ -587,5 +630,6 @@
     <script src="assets/js/jquery-2.1.1.min.js"></script>
     <script src="assets/js/materialize.js"></script>
     <script src="assets/js/init.js"></script>
+    <script src="assets/js/formProcess.js"></script>
   </body>
 </html>

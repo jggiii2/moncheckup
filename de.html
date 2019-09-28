@@ -53,7 +53,11 @@
       <div class="navbar-fixed">
         <nav class="blue" role="navigation">
           <div class="nav-wrapper container">
-            <a href="#" id="navbar-logo-link" class="brand-logo logo white-text">
+            <a
+              href="#"
+              id="navbar-logo-link"
+              class="brand-logo logo white-text"
+            >
               <img
                 src="./assets/img/MyCheckUpLogo.png"
                 alt="MCU"
@@ -61,7 +65,10 @@
                 height="auto"
                 id="navbar-logo-image"
               />
-              <span style="font-size: 2em; vertical-align: middle; padding-left: 0.25em;">MonCheckUp.ch</span>
+              <span
+                style="font-size: 2em; vertical-align: middle; padding-left: 0.25em;"
+                >MonCheckUp.ch</span
+              >
             </a>
             <ul class="right hide-on-med-and-down">
               <li>
@@ -291,12 +298,13 @@
               <div class="row">
                 <div>
                   <h4 class="grey-text text-darken-1">
-                      Ich kontaktiere MonCheckUp.ch, um mich über meine
-                      Gesundheit, meine Kosten und meinen Versicherungsschutz zu informieren
+                    Ich kontaktiere MonCheckUp.ch, um mich über meine
+                    Gesundheit, meine Kosten und meinen Versicherungsschutz zu
+                    informieren
                   </h4>
                 </div>
               </div>
-              <form id="mcuForm" action="mailer.php">
+              <form id="mcuForm">
                 <div class="row">
                   <div class="input-field">
                     <input
@@ -369,16 +377,26 @@
                 </div>
                 <div class="row">
                   <div>
-                      Sind Sie eine Familie (Gruppe von 2 oder mehr) oder eine einzelne Person ?
+                    Sind Sie eine Familie (Gruppe von 2 oder mehr) oder eine
+                    einzelne Person ?
                     <p>
                       <label>
-                        <input name="family" type="radio" />
+                        <input
+                          name="family"
+                          value="Family (group of 2 or more)"
+                          type="radio"
+                        />
                         <span>Familie (Gruppe von 2 oder mehr)</span>
                       </label>
                     </p>
                     <p>
                       <label>
-                        <input name="family" type="radio" checked />
+                        <input
+                          value="Single"
+                          name="family"
+                          type="radio"
+                          checked
+                        />
                         <span>Einzelne Person</span>
                       </label>
                     </p>
@@ -386,17 +404,22 @@
                 </div>
                 <div class="row">
                   <div>
-                      Haben Sie jemals telefonisch mit einem Arzt gesprochen, bevor Sie einen Arzt
-                      aufgesucht haben ?
+                    Haben Sie jemals telefonisch mit einem Arzt gesprochen,
+                    bevor Sie einen Arzt aufgesucht haben ?
                     <p>
                       <label>
-                        <input name="physicianPhone" type="radio" checked />
+                        <input
+                          name="physicianPhone"
+                          value="No"
+                          type="radio"
+                          checked
+                        />
                         <span>Nein</span>
                       </label>
                     </p>
                     <p>
                       <label>
-                        <input name="physicianPhone" type="radio" />
+                        <input name="physicianPhone" value="Yes" type="radio" />
                         <span>Ja</span>
                       </label>
                     </p>
@@ -404,16 +427,16 @@
                 </div>
                 <div class="row">
                   <div>
-                      Kennen Sie Medi24 oder MedGate?
+                    Kennen Sie Medi24 oder MedGate?
                     <p>
                       <label>
-                        <input name="medi24" type="radio" checked />
+                        <input name="medi24" value="No" type="radio" checked />
                         <span>Nein</span>
                       </label>
                     </p>
                     <p>
                       <label>
-                        <input name="medi24" type="radio" />
+                        <input name="medi24" value="Yes" type="radio" />
                         <span>Ja</span>
                       </label>
                     </p>
@@ -421,16 +444,26 @@
                 </div>
                 <div class="row">
                   <div>
-                      Wussten Sie, dass ein Arzt Ihre Versicherungsprämien um bis zu 15% senken kann?
+                    Wussten Sie, dass ein Arzt Ihre Versicherungsprämien um bis
+                    zu 15% senken kann?
                     <p>
                       <label>
-                        <input name="insuranceReduce" type="radio" checked />
+                        <input
+                          name="insuranceReduce"
+                          value="No"
+                          type="radio"
+                          checked
+                        />
                         <span>Nein</span>
                       </label>
                     </p>
                     <p>
                       <label>
-                        <input name="insuranceReduce" type="radio" />
+                        <input
+                          name="insuranceReduce"
+                          value="Yes"
+                          type="radio"
+                        />
                         <span>Ja</span>
                       </label>
                     </p>
@@ -438,29 +471,47 @@
                 </div>
                 <div class="row">
                   <div>
-                      Würde es Ihnen etwas ausmachen, mit einem Arzt zu telefonieren, bevor Sie mit einem
-                      traditionellen Arzt sprechen?
+                    Würde es Ihnen etwas ausmachen, mit einem Arzt zu
+                    telefonieren, bevor Sie mit einem traditionellen Arzt
+                    sprechen?
                     <p>
                       <label>
-                        <input name="disturbPhone" type="radio" checked />
+                        <input
+                          name="disturbPhone"
+                          value="No"
+                          type="radio"
+                          checked
+                        />
                         <span>Nein</span>
                       </label>
                     </p>
                     <p>
                       <label>
-                        <input name="disturbPhone" type="radio" />
+                        <input
+                          name="disturbPhone"
+                          value="It barely disturbes me"
+                          type="radio"
+                        />
                         <span>Es stört mich, aber wenig</span>
                       </label>
                     </p>
                     <p>
                       <label>
-                        <input name="disturbPhone" type="radio" />
+                        <input
+                          name="disturbPhone"
+                          value="It disturbes me"
+                          type="radio"
+                        />
                         <span>Es stört mich</span>
                       </label>
                     </p>
                     <p>
                       <label>
-                        <input name="disturbPhone" type="radio" />
+                        <input
+                          name="disturbPhone"
+                          value="It disturbes me very much"
+                          type="radio"
+                        />
                         <span>Es stört mich sehr</span>
                       </label>
                     </p>
@@ -473,7 +524,7 @@
                       type="submit"
                       name="action"
                     >
-                    Ich Nehme Kontakt Auf
+                      Ich Nehme Kontakt Auf
                       <i class="material-icons right">send</i>
                     </button>
                   </div>
@@ -583,5 +634,6 @@
     <script src="assets/js/jquery-2.1.1.min.js"></script>
     <script src="assets/js/materialize.js"></script>
     <script src="assets/js/init.js"></script>
+    <script src="assets/js/formProcess.js"></script>
   </body>
 </html>
