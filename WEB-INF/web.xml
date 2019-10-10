@@ -7,17 +7,17 @@
     <context-param>
         <description>The address to use in the from address for emails sent by the application</description>
         <param-name>com.medoctor.email.fromEmail</param-name>
-        <param-value>info@medoctor.com</param-value>
+        <param-value>my.checkup.suisse@gmail.com</param-value>
     </context-param>
     <context-param>
         <description>The 'full name' to use when sending emails from the server</description>
         <param-name>com.medoctor.email.fromFN</param-name>
-        <param-value>MEDoctor</param-value>
+        <param-value>MonCheckup.ch</param-value>
     </context-param>
     <context-param>
         <description>The email to send bounces to.</description>
         <param-name>com.medoctor.email.bounce</param-name>
-        <param-value>jggiii2@medoctor.com</param-value>
+        <param-value>my.checkup.suisse@gmail.com</param-value>
     </context-param>
     <context-param>
         <description>The host to send emails to. Usually localhost.</description>
