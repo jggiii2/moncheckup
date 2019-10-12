@@ -38,7 +38,7 @@ function processMcuForm(e) {
 
 function sendToPHPMailer(formBody) {
   var xmlhttp = new XMLHttpRequest()
-  var url = 'https://www.medoctor.com:8181/moncheckup/server/php/mailer.php'
+  var url = 'http://www.singyourcreativity.com/TEMP/server/php/mailer.php'
   var params =
     'first_name=' +
     formBody.first_name +
