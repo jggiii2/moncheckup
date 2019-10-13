@@ -121,8 +121,7 @@
                 Il mio Trattamento è ben coperto dalla mia Assicurazione?
               </h4>
               <h4 class="grey-text text-darken-1">
-                Ho mai speso inutilmente i miei Soldi per l'Assistenza Sanitaria
-                che non avevo?
+                In che modo la telemedicina può ridurre i miei premi del 12-15% ?
               </h4>
               <h4 class="blue-text text-lighten-1">
                 Dovrei davvero andare dal Medico?
@@ -191,13 +190,18 @@
                       class="col s12"
                       id="setInfoForm"
                       method="POST"
-                      action="interview"
+                      action="/Freemium/interview"
                       target="_parent"
                     >
                       <input
                         type="hidden"
                         name="command"
                         value="STARTANONYMOUS"
+                      />
+                      <input
+                        type="hidden"
+                        name="language"
+                        value="it"
                       />
 
                       <div class="input-field">
@@ -489,7 +493,7 @@
                       <label>
                         <input
                           name="disturbPhone"
-                          value="It barely disturbes me"
+                          value="It barely disturbs me"
                           type="radio"
                         />
                         <span>Mi disturba, ma poco</span>
@@ -499,7 +503,7 @@
                       <label>
                         <input
                           name="disturbPhone"
-                          value="It disturbes me"
+                          value="It disturbs me"
                           type="radio"
                         />
                         <span>Mi disturba</span>
@@ -509,7 +513,7 @@
                       <label>
                         <input
                           name="disturbPhone"
-                          value="It disturbes me very much"
+                          value="It disturbs me very much"
                           type="radio"
                         />
                         <span>Mi disturba enormemente</span>
@@ -633,6 +637,6 @@
     <script src="assets/js/jquery-2.1.1.min.js"></script>
     <script src="assets/js/materialize.js"></script>
     <script src="assets/js/init.js"></script>
-    <script src="assets/js/formProcess.js"></script>
+    <!--<script src="assets/js/formProcess.js"></script>-->
   </body>
 </html>

@@ -121,8 +121,7 @@
                 Ist meine Behandlung durch meine Versicherung gedeckt?
               </h4>
               <h4 class="grey-text text-darken-1">
-                Habe ich mein Geld schon unnötig für eine Krankheit ausgegeben,
-                die ich nicht hatte ?
+                Wie kann Telemedizin meine Prämien um 12-15% senken ?
               </h4>
               <h4 class="blue-text text-lighten-1">
                 Muss ich wirklich zum Arzt gehen?
@@ -190,13 +189,18 @@
                       class="col s12"
                       id="setInfoForm"
                       method="POST"
-                      action="interview"
+                      action="/Freemium/interview"
                       target="_parent"
                     >
                       <input
                         type="hidden"
                         name="command"
                         value="STARTANONYMOUS"
+                      />
+                      <input
+                        type="hidden"
+                        name="language"
+                        value="de"
                       />
 
                       <div class="input-field">
@@ -634,6 +638,6 @@
     <script src="assets/js/jquery-2.1.1.min.js"></script>
     <script src="assets/js/materialize.js"></script>
     <script src="assets/js/init.js"></script>
-    <script src="assets/js/formProcess.js"></script>
+    <!--<script src="assets/js/formProcess.js"></script>-->
   </body>
 </html>
